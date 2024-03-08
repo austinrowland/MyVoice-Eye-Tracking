@@ -3,6 +3,8 @@ import pyttsx3
 
 recognizer = speech_recognition.Recognizer()
 
+punctuations = ['.', '?']
+
 while True:
 
     try:
@@ -22,3 +24,4 @@ while True:
 
         recognizer = speech_recognition.Recognizer()
         continue
+
