@@ -1,6 +1,10 @@
 from fructose import Fructose
 import speech_recognition
 from transformers import pipeline
+import logging
+
+# Set the logging level for the transformers library to ERROR
+logging.getLogger("transformers").setLevel(logging.ERROR)
 
 # Load the question-answering pipeline
 qa_pipeline = pipeline("question-answering")
@@ -20,7 +24,7 @@ def describe(recognized_text: str) -> str:
     # """
     # OPTION 2
     """ 
-    Please suggest example replies in a numbered list. Just provide the direction in a few words, instead of full-on sentences -- like autocomplete. This is for a 8-year old. Omit anything else.
+    Please suggest example replies in a numbered list. Just provide the direction in a few words, instead of full-on sentences -- like autocomplete. This is for a 8-year old going through daily tasks. Omit anything else.
     """
     # # OPTION 2
     # """ 
@@ -73,7 +77,15 @@ def main():
                 #Ask the question and get the response
                 # response = ask_question(text)
                 print("TEXT\n", text)
-                response = [describe(text)]
+                if "override" in text:
+                    print("Overriding options . . .")
+                    print("Please say the new options, one by one.")
+                    new_options_audio = recognizer.listen(mic) # Listen for new options
+                    new_options_text = recognizer.recognize_google(new_options_audio)
+                    response = new_options_text.split(", ") # Split options by comma
+                else:
+                    response = [describe(text)] #Get initial options
+                
                 print("Chatbot:\n", ", ".join(response))
 
         # except speech_recognition.UnkownValueError:
