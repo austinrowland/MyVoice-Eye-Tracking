@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accent1400WebApp</title>
+    <style>
+      /* CSS styles for grid layout */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px;
+        padding-top: 20px; /* Adjust top padding */
+        padding-bottom: 20px; /* Adjust bottom padding */
+      }
+      .grid-cell {
+        position: relative;
+        overflow: hidden; /* Ensure images don't overflow grid cells */
+      }
+      .grid-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      .white-box {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px; /* Adjust height as needed */
+        background-color: white;
+        border: 1px solid black;
+        z-index: 1;
+        text-align: center;
+        line-height: 50px; /* Center text vertically */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="white-box">
+      <div class="white-content"></div>
+    </div>
+
+    <div class="grid-container">
+      <!-- Box 1 -->
+      <div class="grid-cell">
+        <img
+          class="grid-photo"
+          src="images/Me&Senten.jpg"
+          alt="Me&Senten Image"
+        />
+        <div class="file-name">Me&Senten</div>
+      </div>
+      <!-- Box 2 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/Name.jpg" alt="Name Image" />
+        <div class="file-name">Name</div>
+      </div>
+      <!-- Box 3 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/Social.jpg" alt="Social Image" />
+        <div class="file-name">Social</div>
+      </div>
+      <!-- Box 4 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/that.jpg" alt="That Image" />
+        <div class="file-name">That</div>
+      </div>
+      <!-- Box 5 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/and.jpg" alt="And Image" />
+        <div class="file-name">And</div>
+      </div>
+      <!-- Box 6 -->
+      <div class="grid-cell">
+        <img
+          class="grid-photo"
+          src="images/preposition.jpg"
+          alt="Preposition Image"
+        />
+        <div class="file-name">Preposition</div>
+      </div>
+      <!-- Box 7 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/what.jpg" alt="What Image" />
+        <div class="file-name">What</div>
+      </div>
+      <!-- Box 8 -->
+      <div class="grid-cell">
+        <img
+          class="grid-photo"
+          src="images/categories.jpg"
+          alt="Categories Image"
+        />
+        <div class="file-name">Categories</div>
+      </div>
+      <!-- Box 9 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/pages.jpg" alt="Pages Image" />
+        <div class="file-name">Pages</div>
+      </div>
+      <!-- Box 10 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/I.jpg" alt="I Image" />
+        <div class="file-name">I</div>
+      </div>
+      <!-- Box 11 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/can.jpg" alt="Can Image" />
+        <div class="file-name">Can</div>
+      </div>
+      <!-- Box 12 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/play.jpg" alt="Play Image" />
+        <div class="file-name">Play</div>
+      </div>
+      <!-- Box 13 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/like.jpg" alt="Like Image" />
+        <div class="file-name">Like</div>
+      </div>
+      <!-- Box 14 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/work.jpg" alt="Work Image" />
+        <div class="file-name">Work</div>
+      </div>
+      <!-- Box 15 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/feel.jpg" alt="Feel Image" />
+        <div class="file-name">Feel</div>
+      </div>
+      <!-- Box 16 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/read.jpg" alt="Read Image" />
+        <div class="file-name">Read</div>
+      </div>
+      <!-- Box 17 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/more.jpg" alt="More Image" />
+        <div class="file-name">More</div>
+      </div>
+      <!-- Box 18 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/stop.jpg" alt="Stop Image" />
+        <div class="file-name">Stop</div>
+      </div>
+      <!-- Box 19 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/you.jpg" alt="You Image" />
+        <div class="file-name">You</div>
+      </div>
+      <!-- Box 20 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/want.jpg" alt="Want Image" />
+        <div class="file-name">Want</div>
+      </div>
+      <!-- Box 21 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/come.jpg" alt="Come Image" />
+        <div class="file-name">Come</div>
+      </div>
+      <!-- Box 22 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/do.jpg" alt="Do Image" />
+        <div class="file-name">Do</div>
+      </div>
+      <!-- Box 23 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/good.jpg" alt="Good Image" />
+        <div class="file-name">Good</div>
+      </div>
+      <!-- Box 24 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/live.jpg" alt="Live Image" />
+        <div class="file-name">Live</div>
+      </div>
+      <!-- Box 25 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/go.jpg" alt="Go Image" />
+        <div class="file-name">Go</div>
+      </div>
+      <!-- Box 26 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/colors.jpg" alt="Colors Image" />
+        <div class="file-name">Colors</div>
+      </div>
+      <!-- Box 27 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/help.jpg" alt="Help Image" />
+        <div class="file-name">Help</div>
+      </div>
+      <!-- Box 28 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/clear.jpg" alt="Clear Image" />
+        <div class="file-name">Clear</div>
+      </div>
+      <!-- Box 29 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/it.jpg" alt="It Image" />
+        <div class="file-name">It</div>
+      </div>
+      <!-- Box 30 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/dont.jpg" alt="Dont Image" />
+        <div class="file-name">Dont</div>
+      </div>
+      <!-- Box 31 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/eat.jpg" alt="Eat Image" />
+        <div class="file-name">Eat</div>
+      </div>
+      <!-- Box 32 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/make.jpg" alt="Make Image" />
+        <div class="file-name">Make</div>
+      </div>
+      <!-- Box 33 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/bad.jpg" alt="Bad Image" />
+        <div class="file-name">Bad</div>
+      </div>
+      <!-- Box 34 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/drink.jpg" alt="Drink Image" />
+        <div class="file-name">Drink</div>
+      </div>
+      <!-- Box 35 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/turn.jpg" alt="Turn Image" />
+        <div class="file-name">Turn</div>
+      </div>
+      <!-- Box 36 -->
+      <div class="grid-cell">
+        <img class="grid-photo" src="images/put.jpg" alt="Put Image" />
+        <div class="file-name">Put</div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to handle image clicks and update the white box text
+      const gridPhotos = document.querySelectorAll(".grid-photo");
+      const whiteBox = document.querySelector(".white-box");
+      const whiteContent = document.querySelector(".white-content");
+      let whiteBoxText = "";
+
+      gridPhotos.forEach((photo) => {
+        photo.addEventListener("click", () => {
+          const altText = photo.alt.replace(" Image", ""); // Remove "Image" from alt text
+
+          if (altText === "Clear") {
+            // Clear the text in the white box
+            whiteBoxText = "";
+            whiteContent.textContent = "";
+          } else {
+            // Add the text to the white box
+            whiteBoxText += whiteBoxText === "" ? altText : " " + altText;
+            whiteContent.textContent = whiteBoxText;
+            whiteBox.style.display = "block"; // Show white box
+
+            // Handle redirections
+            if (altText === "Play") {
+              window.location.href = "openplay.html"; // Redirect to openplay.html
+            } else if (altText === "Like") {
+              window.location.href = "openlike.html"; // Redirect to openlike.html
+            } else if (altText === "Feel") {
+              window.location.href = "openfeel.html"; // Redirect to openfeel.html
+            } else if (altText === "Read") {
+              window.location.href = "openread.html"; // Redirect to openread.html
+            } else if (altText === "Want") {
+              window.location.href = "openwant.html"; // Redirect to openwant.html
+            } else if (altText === "Go") {
+              window.location.href = "opengo.html"; // Redirect to opengo.html
+            } else if (altText === "Colors") {
+              window.location.href = "opencolors.html"; // Redirect to opencolors.html
+            } else if (altText === "Eat") {
+              window.location.href = "openeat.html"; // Redirect to openeat.html
+            } else if (altText === "Drink") {
+              window.location.href = "opendrink.html"; // Redirect to opendrink.html
+            } else if (altText === "Do") {
+              window.location.href = "opendo.html"; // Redirect to opendo.html
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

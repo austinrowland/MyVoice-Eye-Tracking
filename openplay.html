@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accent1400WebApp - Open Play</title>
+    <style>
+        /* CSS styles for grid layout */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px, auto); /* Adjust the row height as needed */
+            gap: 5px;
+            padding-top: 70px; /* Adjust top padding to accommodate white box */
+            padding-bottom: 20px;
+        }
+        .grid-cell {
+            position: relative;
+            overflow: hidden; /* Ensure images don't overflow grid cells */
+        }
+        .grid-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .white-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px; /* Adjust height as needed */
+            background-color: white;
+            border: 1px solid black;
+            z-index: 1;
+            text-align: center;
+            line-height: 50px; /* Center text vertically */
+        }
+    </style>
+</head>
+<body>
+    <div class="white-box">
+        <div class="white-content">Play</div>
+    </div>
+
+    <div class="grid-container">
+        <!-- New images for the first row -->
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/go back.jpg" alt="Go Back Image">
+            <div class="file-name">Go Back</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/my games.jpg" alt="My Games Image">
+            <div class="file-name">My Games</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/games.jpg" alt="Games Image">
+            <div class="file-name">Games</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/playground.jpg" alt="Playground Image">
+            <div class="file-name">Playground</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/memory.jpg" alt="Memory Image">
+            <div class="file-name">Memory</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/uno.jpg" alt="Uno Image">
+            <div class="file-name">Uno</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/go fish.jpg" alt="Go Fish Image">
+            <div class="file-name">Go Fish</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/bingo.jpg" alt="Bingo Image">
+            <div class="file-name">Bingo</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/blank.jpg" alt="Blank Image">
+            <div class="file-name">Blank</div>
+        </div>
+
+        <!-- Original images for the remaining three rows -->
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/I.jpg" alt="I Image">
+            <div class="file-name">I</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/can.jpg" alt="Can Image">
+            <div class="file-name">Can</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/play.jpg" alt="Play Image">
+            <div class="file-name">Play</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/like.jpg" alt="Like Image">
+            <div class="file-name">Like</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/work.jpg" alt="Work Image">
+            <div class="file-name">Work</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/feel.jpg" alt="Feel Image">
+            <div class="file-name">Feel</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/read.jpg" alt="Read Image">
+            <div class="file-name">Read</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/more.jpg" alt="More Image">
+            <div class="file-name">More</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/stop.jpg" alt="Stop Image">
+            <div class="file-name">Stop</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/you.jpg" alt="You Image">
+            <div class="file-name">You</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/want.jpg" alt="Want Image">
+            <div class="file-name">Want</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/come.jpg" alt="Come Image">
+            <div class="file-name">Come</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/do.jpg" alt="Do Image">
+            <div class="file-name">Do</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/good.jpg" alt="Good Image">
+            <div class="file-name">Good</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/live.jpg" alt="Live Image">
+            <div class="file-name">Live</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/go.jpg" alt="Go Image">
+            <div class="file-name">Go</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/colors.jpg" alt="Colors Image">
+            <div class="file-name">Colors</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/help.jpg" alt="Help Image">
+            <div class="file-name">Help</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/clear.jpg" alt="Clear Image">
+            <div class="file-name">Clear</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/it.jpg" alt="It Image">
+            <div class="file-name">It</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/dont.jpg" alt="Dont Image">
+            <div class="file-name">Dont</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/eat.jpg" alt="Eat Image">
+            <div class="file-name">Eat</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/make.jpg" alt="Make Image">
+            <div class="file-name">Make</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/bad.jpg" alt="Bad Image">
+            <div class="file-name">Bad</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/drink.jpg" alt="Drink Image">
+            <div class="file-name">Drink</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/turn.jpg" alt="Turn Image">
+            <div class="file-name">Turn</div>
+        </div>
+        <div class="grid-cell">
+            <img class="grid-photo" src="images/put.jpg" alt="Put Image">
+            <div class="file-name">Put</div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle image clicks and update the white box text
+        document.querySelectorAll('.grid-photo').forEach(function(image) {
+            image.addEventListener('click', function() {
+                const fileName = this.nextElementSibling.textContent;
+                const whiteContent = document.querySelector('.white-content');
+                
+                if (fileName === "Go Back") {
+                    window.location.href = "index.html";
+                } else if (fileName === "Clear") {
+                    // Clear the text in the white box
+                    whiteContent.textContent = '';
+                } else {
+                    // Add the text to the white box
+                    if (whiteContent.textContent === "") {
+                        whiteContent.textContent = fileName;
+                    } else {
+                        whiteContent.textContent += " " + fileName;
+                    }
+                    // Handle redirections
+                    if (fileName === 'Do') {
+                        window.location.href = 'opendo.html'; // Redirect to opendo.html
+                    }
+                }
+            });
+        });
+    </script>
+    
